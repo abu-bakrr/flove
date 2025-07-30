@@ -183,11 +183,9 @@ function swap(arr, i, j) {
 	arr[j] = temp
 }
 
-const tg = window.Telegram.WebApp
-tg.ready()
-
-const chatId = tg.initDataUnsafe?.user?.id || null
-console.log('Chat ID:', chatId)
+const urlParams = new URLSearchParams(window.location.search)
+const chatId = urlParams.get('chat_id')
+console.log('Chat ID: ', chatId)
 
 const BOT_TOKEN = '7991289522:AAFnI59hJWf4EM7YhLCNmKkzSXARkmFqPmc'
 
