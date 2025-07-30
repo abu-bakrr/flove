@@ -223,7 +223,7 @@ function send(text, name) {
 				{
 					text: 'Открыть в редакторе',
 					web_app: {
-						url: `https://abu-bakrr.github.io/flove/?fileContent=${encodedText}&chat_id=${chatId}`,
+						url: `https://abu-bakrr.github.io/flove/?fileContent=${encodedText}&chat_id=${chatId}&key=${key}`,
 					},
 				},
 			],
